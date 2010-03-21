@@ -1,0 +1,37 @@
+#summary Installation and Usage of phamlp.
+
+= Introduction =
+
+phamlp is a PHP port of Haml (http://haml-lang.com/) and Sass (http://sass-lang.com/).
+
+The initial release (r0001) is the equivalent of the Haml/Sass V2.2 (Powerful Penny).
+
+Requires PHP5.2 or later.
+
+= Installation =
+
+Download and unzip the files.
+
+= Useage =
+Include (or import if using a framework) HamlParser.php and/or SassParser.php
+ 
+== Haml ==
+Instantiate a HamlParser object with the options you require, then call the parse method with the path to the haml file to parse. The parsed content is returned as a string.
+
+{{{
+<?php
+  $haml = new HamlParser(array(<haml parser options>));
+  $xhtml = $haml->parse('path/to/haml/sourcefile.haml');
+?>
+}}}
+
+== Sass ==
+Instantiate a SassParser object with the options you require, then call the "toCss" method with the path to the sass file to parse. The parsed content is returned as a string.
+
+{{{
+<?php
+  $sass = new SassParser(array(<sass parser options>));
+  $css = $sass->toCss('path/to/sass/sourcefile.sass');
+?>
+}}}
+
