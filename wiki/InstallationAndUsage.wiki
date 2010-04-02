@@ -1,4 +1,5 @@
 #summary Installation and Usage of PHamlP.
+#labels Haml,Featured,Phase-Deploy
 
 = Introduction =
 
