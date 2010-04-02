@@ -1,0 +1,37 @@
+#labels Haml,Phase-Deploy,Featured
+#Haml Options
+
+= Introduction =
+Description of the options used with Haml.
+
+
+= Options =
+attrWrapper: (string) The character that should wrap element attributes. Characters of this type within attributes will be escaped (e.g. by replacing them with &apos;) if the character is an apostrophe or a quotation mark. Default = '"' (a quotation mark).
+
+debug: (integer) Initial debug setting:
+HamlParser::DEBUG_NONE: no debug
+HamlParser::DEBUG_SHOW_SOURCE: show source in the output
+HamlParser::DEBUG_SHOW_OUTPUT: show output in the browser
+HamlParser::DEBUG_SHOW_ALL: show output and debug in the browser
+Default = HamlParser::DEBUG_NONE.
+
+doctype: (string) Custom DOCTYPE. If null (default) format must be 'xhtml', 'html4'', or 'html5' (See [http://haml-lang.com/docs/yardoc/file.HAML_REFERENCE.html#doctype_ Haml Reference] for supported DOCTYPEs
+
+escapeHtml: (boolean) Whether or not to escape X(HT)ML-sensitive characters in script. If this is true, = behaves like &=; otherwise, it behaves like !=. Note that if this is set, != should be used for yielding to subtemplates and rendering partials. Default = false.
+
+filterPath: (string) Path to filters. If specified this dirctory will be searched before PHamlP looks for the filter in it's collection. This allows the default filters to be overridden and new filters to be installed. **Note:** No trailing directory separator.
+
+format: (string) DOCTYPE format. Default = 'xhtml'.
+
+preserveComments: (boolean) If true comments are preserved in ugly mode. If not in ugly mode comments are always output. Defaults to false.
+
+style: (string) Output style. Default = 'nested'. See ugly.
+Available output styles:
+nested: output is nested according to the indent level in the source
+expanded: block tags have their own lines as does content which is indented
+compact: block tags and their content go on one line
+compressed: all unnecessary whitepace is removed. If ugly is true this style is used.
+
+suppressEval: (boolean) Whether or not attribute hashes and scripts designated by = or ~ should be evaluated. If true, the scripts are rendered as empty strings. Default = false.
+
+ugly: (boolean) If true no attempt is made to properly indent or format the output. Reduces size of output file but is not very readable; equivalent of style == compressed. Default = true.
