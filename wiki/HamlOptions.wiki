@@ -18,8 +18,9 @@ HamlParser::DEBUG_SHOW_OUTPUT: show output in the browser<br/>
 HamlParser::DEBUG_SHOW_ALL: show output and debug in the browser<br/>
 Default = HamlParser::DEBUG_NONE.<br/>
 
-*doctype* (string) Custom Doctype. If not null and the Doctype declaration in the Haml Document is not a built in Doctype this will be used as the Doctype. This allows Haml to be used for non-(X)HTML documents that are XML compliant.<br/>
-Default = null.
+*doctype* (string) Custom Doctype. If not null and the Doctype declaration in the Haml Document is not a [http://haml-lang.com/docs/yardoc/file.HAML_REFERENCE.html#doctype_built in Doctype] this will be used as the Doctype. This allows Haml to be used for non-(X)HTML documents that are XML compliant.<br/>
+Default = null.<br/>
+See emptyTags, inlineTags, minimizedAttributes
 
 *emptyTags* (array) A list of tag names that should be automatically self-closed
 if they have no content.<br/>
@@ -31,7 +32,8 @@ Default = false.
 *filterPath* (string) Path to filters. If specified this directory will be searched before PHamlP looks for the filter in it's collection. This allows the default filters to be overridden and new filters to be installed.<br/>
 **Note:** No trailing directory separator.
 
-*format* (string) DOCTYPE format.<br/>
+*format* (string) Doctype format.  Determines how the [http://haml-lang.com/docs/yardoc/file.HAML_REFERENCE.html#doctype_Haml Doctype declaration] is rendered.<br/>
+See doctype<br/>
 Default = 'xhtml'.
 
 *inlineTags* (array) A list of inline tags.<br/><br/>
