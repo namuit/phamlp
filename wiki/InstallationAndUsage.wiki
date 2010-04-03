@@ -35,3 +35,10 @@ Instantiate a SassParser object with the options you require, then call the "toC
   $css = $sass->toCss('path/to/sass/sourcefile.sass');
 ?>
 }}}
+
+=== Indentation ===
+Both Haml and Sass are whitespace sensitive, i.e. indentation has meaning. In PHamlP spaces or tabs can be used as the indentation character and which is used is automatically detected on a per file basis; the first indented line determines the indentation character for that file; you can not mix characters in the same file.
+
+If spaces are being used, the number of spaces at the start of the first indented line determine the number of spaces used for indentation. e.g. if the first indented line starts with 2 spaces valid indentations are 2 spaces, 4 spaces, 6 spaces, etc.; if it is 3 spaces the valid indentations are 3 spaces, 6 spaces, 9 spaces, etc.
+
+If a tab is used each tab character in a line is an indentation level. 
