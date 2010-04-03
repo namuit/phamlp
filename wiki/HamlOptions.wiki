@@ -37,7 +37,10 @@ Default = false.
 **Note:** No trailing directory separator.
 
 *format* (string) Doctype format.  Determines how the is rendered using a built in Doctype.<br/>
-Built in Doctypes are<br/>
+Built in Doctypes are:
+
+|| *Haml* || *Doctype* || *DOCTYPE* ||
+
 _format == xhtml_
 || !!! || XHTML 1.0 Transitional || `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">` ||
 || !!! Strict || XHTML 1.0 Strict || `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">` ||
