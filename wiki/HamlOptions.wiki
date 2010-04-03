@@ -36,7 +36,7 @@ Default = false.
 *filterPath* (string) Path to filters. If specified this directory will be searched before PHamlP looks for the filter in it's collection. This allows the default filters to be overridden and new filters to be installed.<br/>
 **Note:** No trailing directory separator.
 
-*format* (string) Doctype format.  Determines how the is rendered using a built in Doctype.<br/>
+*format* (string) Doctype format.  Determines how the Doctype is rendered using a built in Doctype.<br/>
 Built in Doctypes are:
 
 *_format == xhtml_*
