@@ -11,53 +11,53 @@ Options are passed to the Haml parser as name=>value pairs at instantiation.
 *attrWrapper* (string) The character that should wrap element attributes. Characters of this type within attributes will be escaped (e.g. by replacing them with &apos;) if the character is an apostrophe or a quotation mark.<br/>
 Default = '"' (a quotation mark).
 
-*debug* (integer) Initial debug setting:
-HamlParser::DEBUG_NONE: no debug
-HamlParser::DEBUG_SHOW_SOURCE: show source in the output
-HamlParser::DEBUG_SHOW_OUTPUT: show output in the browser
-HamlParser::DEBUG_SHOW_ALL: show output and debug in the browser
-Default = HamlParser::DEBUG_NONE.
+*debug* (integer) Initial debug setting:<br/>
+HamlParser::DEBUG_NONE: no debug<br/>
+HamlParser::DEBUG_SHOW_SOURCE: show source in the output<br/>
+HamlParser::DEBUG_SHOW_OUTPUT: show output in the browser<br/>
+HamlParser::DEBUG_SHOW_ALL: show output and debug in the browser<br/>
+Default = HamlParser::DEBUG_NONE.<br/>
 
-*doctype* (string) Custom Doctype. If not null and the Doctype declaration in the Haml Document is not a built in Doctype this will be used as the Doctype. This allows Haml to be used for non-(X)HTML documents that are XML compliant.
+*doctype* (string) Custom Doctype. If not null and the Doctype declaration in the Haml Document is not a built in Doctype this will be used as the Doctype. This allows Haml to be used for non-(X)HTML documents that are XML compliant.<br/>
 Default = null.
 
 *emptyTags* (array) A list of tag names that should be automatically self-closed
-if they have no content.
+if they have no content.<br/>
 Default = array('meta', 'img', 'link', 'br', 'hr', 'input', 'area', 'param', 'col', 'base')
 
-*escapeHtml* (boolean) Whether or not to escape X(HT)ML-sensitive characters in script. If this is true, = behaves like &=; otherwise, it behaves like !=. Note that if this is set, != should be used for yielding to subtemplates and rendering partials.
+*escapeHtml* (boolean) Whether or not to escape X(HT)ML-sensitive characters in script. If this is true, = behaves like &=; otherwise, it behaves like !=. Note that if this is set, != should be used for yielding to subtemplates and rendering partials.<br/>
 Default = false.
 
-*filterPath* (string) Path to filters. If specified this directory will be searched before PHamlP looks for the filter in it's collection. This allows the default filters to be overridden and new filters to be installed.
+*filterPath* (string) Path to filters. If specified this directory will be searched before PHamlP looks for the filter in it's collection. This allows the default filters to be overridden and new filters to be installed.<br/>
 **Note:** No trailing directory separator.
 
-*format* (string) DOCTYPE format.
+*format* (string) DOCTYPE format.<br/>
 Default = 'xhtml'.
 
-*inlineTags* (array) A list of inline tags.
+*inlineTags* (array) A list of inline tags.<br/><br/>
 Default = array('a', 'abbr', 'accronym', 'b', 'big', 'cite', 'code', 'dfn', 'em', 'i', 'kbd', 'q', 'samp', 'small', 'span', 'strike', 'strong', 'tt', 'u', 'var')
 
-*minimizedAttributes* (array) Attributes that are minimised.
+*minimizedAttributes* (array) A list of attributes that are minimised.
 Default = array('compact', 'checked', 'declare', 'readonly', 'disabled', 'selected', 'defer', 'ismap', 'nohref', 'noshade', 'nowrap', 'multiple', 'noresize')
 
-*preserve* (array) A list of tag names that should automatically have their newlines preserved.
+*preserve* (array) A list of tag names that should automatically have their newlines preserved.<br/>
 Default = array('pre', 'textarea')
 
-*preserveComments* (boolean) If true comments are preserved in ugly mode. If not in ugly mode comments are always output.
+*preserveComments* (boolean) If true comments are preserved in ugly mode. If not in ugly mode comments are always output.<br/>
 Defaults = false.
 
-*style* (string) Output style.
-Available output styles:
-nested: output is nested according to the indent level in the source
-expanded: block tags have their own lines as does content which is indented
-compact: block tags and their content go on one line
-compressed: all unnecessary whitepace is removed. If ugly is true this style is used.
-Default = 'nested'.
+*style* (string) Output style.<br/>
+Available output styles:<br/>
+nested: output is nested according to the indent level in the source<br/>
+expanded: block tags have their own lines as does content which is indented<br/>
+compact: block tags and their content go on one line<br/>
+compressed: all unnecessary whitepace is removed. If ugly is true this style is used.<br/>
+Default = 'nested'.<br/>
 See ugly.
 
-*suppressEval* (boolean) Whether or not attribute hashes and scripts designated by = or ~ should be evaluated. If true, the scripts are rendered as empty strings.
+*suppressEval* (boolean) Whether or not attribute hashes and scripts designated by = or ~ should be evaluated. If true, the scripts are rendered as empty strings.<br/>
 Default = false.
 
-*ugly* (boolean) If true no attempt is made to properly indent or format the output. Reduces size of output file but is not very readable; equivalent of style == compressed.
-Default = true.
+*ugly* (boolean) If true no attempt is made to properly indent or format the output. Reduces size of output file but is not very readable; equivalent of style == compressed.<br/>
+Default = true.<br/>
 See style.
