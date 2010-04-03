@@ -76,10 +76,10 @@ Defaults = false.
 
 *style* (string) Output style.<br/>
 Available output styles:<br/>
-nested: output is nested according to the indent level in the source<br/>
-expanded: block tags have their own lines as does content which is indented<br/>
-compact: block tags and their content go on one line<br/>
-compressed: all unnecessary whitepace is removed. If ugly is true this style is used.<br/>
+_nested_: output is nested according to the indent level in the source<br/>
+_expanded_: block tags have their own lines as does content which is indented<br/>
+_compact_: block tags and their content go on one line<br/>
+_compressed_: all unnecessary whitepace is removed. If ugly is true this style is used.<br/>
 Default = 'nested'.<br/>
 **Note:** ugly must be false to allow style.<br/>
 See ugly.
