@@ -59,11 +59,13 @@ expanded: block tags have their own lines as does content which is indented<br/>
 compact: block tags and their content go on one line<br/>
 compressed: all unnecessary whitepace is removed. If ugly is true this style is used.<br/>
 Default = 'nested'.<br/>
+**Note:** ugly must be false to allow style.<br/>
 See ugly.
 
 *suppressEval* (boolean) Whether or not attribute hashes and scripts designated by = or ~ should be evaluated. If true, the scripts are rendered as empty strings.<br/>
 Default = false.
 
 *ugly* (boolean) If true no attempt is made to properly indent or format the output. Reduces size of output file but is not very readable; equivalent of style == compressed.<br/>
+**Note:** ugly must be false to allow style.<br/>
 Default = true.<br/>
 See style.
