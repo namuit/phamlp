@@ -33,7 +33,7 @@ Default = array('meta', 'img', 'link', 'br', 'hr', 'input', 'area', 'param', 'co
 *escapeHtml* (boolean) Whether or not to escape X(HT)ML-sensitive characters in script. If this is true, = behaves like &=; otherwise, it behaves like !=. Note that if this is set, != should be used for yielding to subtemplates and rendering partials.<br/>
 Default = false.
 
-*filterDir* (string) Directory containing user defined filters. If specified this directory will be searched before PHamlP looks for the filter in it's collection. This allows the default filters to be overridden and new filters to be installed.<br/>
+*filterDir* (string) Path to the directory containing user defined filters. If specified this directory will be searched before PHamlP looks for the filter in it's collection. This allows the default filters to be overridden and new filters to be installed.<br/>
 **Note:** No trailing directory separator.
 
 *format* (string) Doctype format.  Determines how the Doctype is rendered using a built in Doctype.<br/>
