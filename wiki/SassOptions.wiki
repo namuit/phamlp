@@ -1,5 +1,5 @@
 #summary Description of the options used with Sass.
-#labels Phase-Implementation,Phase-Deploy
+#labels Phase-Implementation,Phase-Deploy,Featured
 
 = Introduction =
 
