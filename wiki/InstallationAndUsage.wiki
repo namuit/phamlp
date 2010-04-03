@@ -5,7 +5,7 @@
 
 PHamlP is a PHP port of Haml (http://haml-lang.com/) and Sass (http://sass-lang.com/).
 
-The initial release (r0001) is the equivalent of the Haml/Sass V2.2 (Powerful Penny).
+phamlp_2.2_r**** is the equivalent of the Haml/Sass V2.2 (Powerful Penny).
 
 Requires PHP5.2 or later.
 
