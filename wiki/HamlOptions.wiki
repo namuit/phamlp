@@ -1,4 +1,6 @@
+#summary Description of the options used with Haml.
 #labels Haml,Phase-Deploy,Featured
+
 =Haml Options=
 
 ==Introduction==
