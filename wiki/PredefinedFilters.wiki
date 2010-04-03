@@ -43,7 +43,7 @@ PHamlP has the following predefined filters that work "out of the box":
 == Abstract filters ==
 These filters require external classes to operate. PHamlP provides abstract base classes that must be extended in order to provide the required external class.
 
-Abstract base classes are named "`_`Haml`<FilterName>`Filter", e.g. "`_`HamlTextileFilter". The extended class must be named "Haml`<FilterName>`Filter", e.g. "HamlTextileFilter" and placed in the  _filterPath_ directory.
+Abstract base classes are named "`_`Haml`<FilterName>`Filter", e.g. "`_`HamlTextileFilter". The extended class must be named "Haml`<FilterName>`Filter", e.g. "HamlTextileFilter" and placed in the  _filterDir_ directory (see HamlOptions).
 
 An example implementation of the Markdown filter for Yii is included in the distribution.
 
