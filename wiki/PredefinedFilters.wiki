@@ -45,14 +45,24 @@ PHamlP has the following predefined filters that work "out of the box":
 *:sass* Parses the filtered text with Sass to produce CSS output.
 
 == Abstract filters ==
-These filters require external classes to operate. PHamlP provides abstract base classes that must be extended in order to provide the required external class.
+These filters require external - vendor - classes to operate. PHamlP provides abstract base classes that must be extended in order to provide the required external class.
+
+Extended classes must implement the "init()" function. This must provide the path to the vendor class file (unless already imported by a framework) and the name of the vendor class (unless the default is correct).
+{{{
+  /**
+   * Initialise the filter
+   */
+  public function init() {
+    $this->vendorClass = 'vendorClass';
+    $this->vendorPath = 'path/to/vendor/class/file.php';		
+    parent::init();
+  }
+}}}
 
 Abstract base classes are named "`_`Haml`<FilterName>`Filter", e.g. "`_`HamlTextileFilter". The extended class must be named "Haml`<FilterName>`Filter", e.g. "HamlTextileFilter" and placed in the  _filterDir_ directory (see HamlOptions).
 
-An example implementation of the Markdown filter for Yii is included in the distribution.
-
 *:markdown* Parses the filtered text with Markdown.<br/>
-*Note:* The markdown filter abstract base class must be extended and the getParser() method return the Markdown parser.
+Default vendorClass = Markdown_Parser
 
 *:textile* Parses the filtered text with Textile.<br/>
-*Note:* The textile filter abstract base class must be extended and the getParser() method return the Textile parser.
+Default vendorClass = Textile
