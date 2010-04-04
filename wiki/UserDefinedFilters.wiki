@@ -20,10 +20,10 @@ This method must return a string that is the filtered text.
 
 Your filter class may implement the "init()" method to provide initialisation of the filter. This method should call the parent init() method.
 
-It is a good idea to provide PHP interpolation #(PHP code) in your filter. See the example below and the built in filters for examples of how this is done.
+It is a good idea to provide PHP interpolation #{PHP code} in your filter. See the example below and the built in filters for examples of how this is done.
 
 == Usage ==
-Use your filter is the same as using a built in filter, i.e. a colon followed by the name of the filter.
+Using your filter is the same as using a built in filter, i.e. a colon followed by the name of the filter.
 
 So to use the "refine" filter:
 {{{
