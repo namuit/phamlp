@@ -49,6 +49,8 @@ Using the modifiers the above example becomes:
 }}}
 which renders as (*Strong text* other text: Link1, Link2); just what was wanted.
 
+This is not the only way to do this BTW. If you'd rather not have a single commas on its own line the alternative is to use inline HTML and use Haml for the layout. There is an interesting article on the use of Haml for content [http://chriseppstein.github.com/blog/2010/02/08/haml-sucks-for-content/ here].
+
 == Debugging Directives ==
 PHamlP/Haml adds debugging directives to help you with development. Debugging directives start with *?#*, followed by either *s*, *o* or both, and end with either *+* to turn the directive on, *-* to turn it off, or *!* to toggle it. The default for all directives is *off*.
 
