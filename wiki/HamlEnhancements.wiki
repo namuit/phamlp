@@ -5,8 +5,8 @@
 PHamlP/Haml adds a few extras to Haml.
 
 These
-  * Give additional control over outer whitespace removal (HamlAdditions#Outer_Whitespace_Removal)
-  * Add debugging directives (HamlAdditions#Debugging_Directives)
+  * Give additional control over outer whitespace removal (HamlEnhancements #Outer_Whitespace_Removal)
+  * Add debugging directives (HamlEnhancements #Debugging_Directives)
 
 == Outer Whitespace Removal ==
 PHamlP adds modifiers to the standard outer whitespace control; |> and >|.
