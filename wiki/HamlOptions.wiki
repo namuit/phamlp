@@ -91,3 +91,16 @@ Default = false.
 **Note:** ugly must be false to allow style.<br/>
 Default = true.<br/>
 See style.
+
+*helperFile* (string) Path to a file containing a class with user defined helper methods.
+The filename is also the classname. The class must extend HamlHelpers. e.g.<br/>
+helperFile == /path/to/MyHamlHelpers.php
+{{{
+<?php
+class MyHamlHelpers extends HamlHelpers {
+  public static function myHelperMethod($block, $a0, $a1) {
+    return <do something to block with $a0 and $a1>;
+  }
+}
+?>
+}}}
