@@ -21,7 +21,7 @@ Default = './sass-cache'
 *css_location* (string) The path where CSS output should be written to.<br />
 Default = './css'
 
-*debug_info* (boolean) When true the line number and file where a selector is defined is emitted into the compiled CSS in a format that can be understood by the [https://addons.mozilla.org/en-US/firefox/addon/103988/FireSass Firebug extension].
+*debug_info* (boolean) When true the line number and file where a selector is defined is emitted into the compiled CSS in a format that can be understood by the [https://addons.mozilla.org/en-US/firefox/addon/103988/FireSass FireSass extension].
 Disabled when using the compressed output style.<br />
 Default = false
 
