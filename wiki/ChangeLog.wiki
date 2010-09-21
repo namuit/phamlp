@@ -1,6 +1,11 @@
 #labels Phase-Implementation
 #Change Log.
 
+= 3.2 =
+  * Inclusion of Compass as an extension to Sass
+  * Fixed SassScript parsing in SCSS files
+  * HamlHelpers can now accept arrays as arguments
+
 = 3.1 =
   * Added support for SassNumbers with complex units
   * @import directive can import multiple files
